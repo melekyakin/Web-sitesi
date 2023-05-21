@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="iletisim.css">
+  <title>İletişim Sayfası</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div class="navbar">
+		<ul>
+	      <li><a href="b.html">Anasayfa</a></li>
+		    <li><a href="hakkinda.html">Hakkında</a></li>
+		    <li><a href="sehrim.html">Şehrim</a></li>
+		    <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+		    <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+		    <li><a href="iletisim.html">İletişim</a></li>
+		</ul>
+	</div>
+  <div id="app">
+    <h1>İletişim Formu</h1>
+    <form @submit.prevent="submitForm">
+
+      <input type="text" id="name" v-model="formData.name" placeholder="Full Name" required>
+      <br>
+
+
+      <input type="email" id="email" v-model="formData.email" placeholder="Email" required>
+      <br>
+
+      <textarea id="message" v-model="formData.message" placeholder="Message" required></textarea>
+      <br>
+
+      <button type="button" @click="clearForm">Temizle</button>
+      <button type="submit">Gönder</button>
+    </form>
+
+
+    <div v-if="submitted">
+      <h2>Gönderilen Bilgiler:</h2>
+      <p><strong>Adınız:</strong> {{ formData.name }}</p>
+      <p><strong>E-posta Adresiniz:</strong> {{ formData.email }}</p>
+      <p><strong>Mesajınız:</strong> {{ formData.message }}</p>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        formData: {
+          name: '',
+          email: '',
+          message: ''
+        },
+        submitted: false
+      },
+      methods: {
+        submitForm() {
+          this.submitted = true;
+        },
+        clearForm() {
+          this.formData.name = '';
+          this.formData.email = '';
+          this.formData.message = '';
+          this.submitted = false;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
