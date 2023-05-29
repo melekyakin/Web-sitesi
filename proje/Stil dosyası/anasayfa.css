@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+	background-image:  url("arkaplan.jpg");
+	background-size:100% 100%;
+	height: 100vh;
+}
+.center{
+	position:absolute;
+	top:70%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-family:sans-serif;
+	user-select:none;
+}
+.center h1{
+	color:white;
+	font-size: 70px;
+	font-weight:bold;
+	width:900px;
+	text-align:center;
+}
+.center h2{
+	color:white;
+	font-size: 50px;
+	font-weight:bold;
+	width:885px;
+	margin-top:10px;
+	text-align:center;
+}
+.center .buttons{
+	margin:35px 280px;
+	text-align:center;
+}
+.buttons a{
+	color: #FFFFFF; 
+	text-decoration: none;	
+}
+.buttons button{
+	height:50px;
+	width:150px;
+	font-size:20px;
+	font-family:bold;
+	background:#800000;
+	border:none;
+	cursor:pointer;
+	border-radius:25px;	
+}	
+.buttons button:hover{
+	background:black;
+}
