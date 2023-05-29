@@ -9,7 +9,7 @@ if (isset($_POST["username"]) == "POST" && isset($_POST["password"])) {
     if ($username == $user && $password == $pass) {
         // Login işlemi başarılı
         echo "Hoşgeldiniz \"" . $username . "\"";
-        header("location: hakkinda.html");
+       echo "Hoşgeldiniz g221210385";
         exit;
     } else {
         // Login işlemi başarısız
