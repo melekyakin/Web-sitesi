@@ -1,94 +1,185 @@
 <!DOCTYPE html>
+<html>
 <html lang="tr-TR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Özgeçmiş</title>
-  <link rel="stylesheet" href="ozgecmis.css">
-  <script src="https://kit.fontawesome.com/d755b7edb1.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Responsive Resume UI Design in HTML and CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="ozgecmis.css">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
-
-   <div class="container">
-    <section class="left_Slide">
-      <div class="profileText">
-        <div class="imgBox">
-          <img src="vesikalık.jpg" alt="">
-        </div>
-		<header>
-        <h2>Melek Yakın <br><span>Bilgisayar Mühendisliği 3. Sınıf Öğrencisi </span></h2>
-		</header>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="anasayfa.html">Anasayfa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-auto me-3">
+        <li class="nav-item">
+          <a class="nav-link" href="hakkinda.html">Hakkında</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sehrim.html">Şehrim</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-    <section class="contactInfo">
-        <h3 class="title">İletişim</h3>
-        <ul>
-          <li>
-            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-            <span class="text"> +90 555 888 99 66</span>
-          </li>
-          <li>
-            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-            <span class="text"> info@info.com</span>
-          </li>
-          <li>
-            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-            <span class="text"> instagram/myprofile</span>
-          </li>
-          <li>
-            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-            <span class="text">Türkiye, Bursa </span>
-          </li>
-        </ul>	   
-    </section>
-    <section class="contactInfo education">
-        <h3 class="title">Eğitim</h3>
-        <ul>
-          <li>
-            <h5><time datetime="2015-2019">2015-2019</time></h5>
-            <h4>Atatürk Anadolu Lisesi</h4>
-          </li>
-          <li>
-            <h5><time datetime="2022-2025">2022-2025</time></h5>
-            <h4>Bilgisayar Mühendisliği</h4>
-            <h4>Sakarya Üniversitesi</h4>
-          </li>
-        </ul>
-      </section>
-      <section class="contactInfo language">
-        <h3 class="title">Diller</h3>
-        <ul>
-          <li>
-            <span class="text">İngilizce</span>
-            <meter value="70" min="0" max="100">70%</meter>
-          </li>
-        </ul>
-      </section>
-    </section>
-
-    <section class="right_Slide">
-      <div class="about">
-        <h2 class="title2">Profil</h2>
-        <p>Ben Melek Yakın 13 Ağustos 2000 yılında Bursa'da doğdum. İlkokul ve liseyi burada okuduktan sonra 2019 
+  </div>
+</nav>
+<div class="resume_wrapper">
+	<div class="resume_left">
+		<div class="resume_image">
+			<img src="vesikalık.jpg" alt="Resume_image">
+		</div>
+		<div class="resume_bottom">
+			<div class="resume_item resume_namerole">
+				<div class="name">Rosie Jackson</div>
+				<div class="role">UI Designer</div>
+			</div>
+			
+			<div class="resume_item resume_contact">
+				<div class="resume_title">İletişim</div>
+				<div class="resume_info">
+					<div class="resume_subtitle">Telefon</div>
+					<div class="resume_subinfo">+90 000 222 333</div>
+				</div>
+				<div class="resume_info">
+					<div class="resume_subtitle">E-mail</div>
+					<div class="resume_subinfo">melek@gmail.com</div>
+				</div>
+			</div>
+			<div class="resume_item resume_skills">
+				<div class="resume_title">Beceriler</div>
+				<div class="resume_info">
+					<div class="skills_list">
+						<div class="skills_left">HTML</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 70%"></span>
+							</p>
+						</div>
+					</div>
+					<div class="skills_list">
+						<div class="skills_left">CSS</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 70%"></span>
+							</p>
+						</div>
+					</div>
+					<div class="skills_list">
+						<div class="skills_left">Javascript</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 50%"></span>
+							</p>
+						</div>
+					</div>
+					<div class="skills_list">
+						<div class="skills_left">Autocad</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 95%"></span>
+							</p>
+						</div>
+					</div>
+					<div class="skills_list">
+						<div class="skills_left">C++</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 80%"></span>
+							</p>
+						</div>
+					</div>
+					<div class="skills_list">
+						<div class="skills_left">C#</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 65%"></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="resume_right">
+		<div class="resume_item resume_namerole">
+			<div class="name">Melek Yakın</div>
+			<div class="role">Öğrenci</div>
+		</div>
+		<div class="resume_item resume_profile">
+				<div class="resume_title">Profil</div>
+				<div class="resume_info">Ben Melek Yakın 13 Ağustos 2000 yılında Bursa'da doğdum. İlkokul ve liseyi burada okuduktan sonra 2019 
 		yılında İstanbul Teknik Üniversitesi Deniz Ulaştırma ve İşletme Mühendisliği bölümünü kazandım. Bir yıl hazırlık 
 		olmak üzere 3 yıl bu bölümü okudum. Daha sonra bana uygun bir meslek olduğunu düşünmediğimden dolayı
 		2022 yılında Sakarya Üniversitesi Bilgisayar Mühendisliği bölümüe yatay geçiş yaptım. Şuan 3. sınıf olarak
-		buradaki eğitimime devam etmekteyim.</p>
-      </div>
-      <section class="skills">
-        <h2>Yetenekler</h2>
-        <ul>
-          <li><em>HTML</em></li>
-          <li><em>CSS</em></li>
-          <li><em>JavaScript</em></li>
-          <li><em>Java</em></li>
-          <li><em>C++</em></li>
-          <li><em>C#</em></li>
-          <li><em>Autocad</em></li>
-        </ul>
-      </section>
-	  <button><a href="b.html"> Anasayfa</a></button>
-    </div>
-  </div>
+		buradaki eğitimime devam etmekteyim.</div>
+			</div>
+		<div class="resume_item resume_education">
+			<div class="resume_title">Education</div>
+			<div class="resume_info">
+				<div class="resume_data">
+					<div class="year">2015 - 2019</div>
+					<div class="content">
+						<p>Atatürk Anadolu Lisesi</p>
+					</div>
+				</div>
+				<div class="resume_data">
+					<div class="year">2022-2025</div>
+					<div class="content">
+						<p>Sakarya Üniversitesi- Bilgisayar Mühendisliği</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="resume_item resmue_interests">
+			<div class="resume_title">Hobilerim</div>
+			<div class="resume_info">
+				<div class="interests">
+					<div class="int_icon">
+						<i class="fas fa-volleyball-ball"></i>
+					</div>
+					<div class="int_data">Spor</div>
+				</div>
+				<div class="interests">
+					<div class="int_icon">
+						<i class="fas fa-book-open"></i>
+					</div>
+					<div class="int_data">Kitap okumak</div>
+				</div>
+				<div class="interests">
+					<div class="int_icon">
+						<i class="fas fa-film"></i>
+					</div>
+					<div class="int_data">Dizi-film izlemek</div>
+				</div>
+				<div class="interests">
+					<div class="int_icon">
+						<i class="fas fa-biking"></i>
+					</div>
+					<div class="int_data">Bisiklet sürmek</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
