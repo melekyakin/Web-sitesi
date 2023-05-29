@@ -9,25 +9,25 @@
 .card{
 	width:25%;
 	box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
-	border-radius:6px;
 	background: white;
+	display:flex;
+
 }
 
-.container{
+.card .container{
 	padding: 5px 20px; 
 	padding-top:20px;
 
 }
 .container p{
 	margin: 15px 0;
-
 }
-img{
+.card img{
 	border-radius: 6px 6px 0 0;
 	width:100%;	
 }
-.card p{
-	font-size:19px;
+.card .container p{
+	font-size:15px;
 }
 
 #otobiyografi{
@@ -65,4 +65,16 @@ img{
 	padding-top:30px;
 	box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
 	width:95%;
+	flex-wrap:wrap:
+}
+@media only screen and(max-width:960px){
+	.container{
+		flex-wrap:wrap:
+	}
+	.card{
+		width:48%;
+	}
+	.card img{
+		width:30%;
+	}
 }
